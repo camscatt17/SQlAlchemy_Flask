@@ -1,6 +1,6 @@
 from sqlalchemy import text, and_
 from __init__ import session, Base
-from Product import Product
+from database import Product
 
 ## Retorno de todos os produtos
 # Primeira forma
