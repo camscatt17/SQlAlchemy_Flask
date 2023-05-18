@@ -1,7 +1,5 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Float, DateTime
-from sqlalchemy.orm import DeclarativeBase, relationship, sessionmaker, subqueryload
-from sqlalchemy import Table, event
-from __init__ import engine, session, Base
+from sqlalchemy import Column, Integer, String, Float
+from __init__ import session, Base
 
 class Product(Base): #Criando uma tabela para o produto
     __tablename__ = 'product'

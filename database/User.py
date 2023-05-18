@@ -1,7 +1,6 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Float, DateTime
-from sqlalchemy.orm import DeclarativeBase, relationship, sessionmaker, subqueryload
-from sqlalchemy import Table, event
-from __init__ import engine, session, Base
+from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy.orm import relationship, subqueryload
+from __init__ import session, Base
 from Address import Address
 
 class User(Base):
