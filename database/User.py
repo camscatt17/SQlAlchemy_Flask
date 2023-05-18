@@ -84,3 +84,44 @@ class Queries():
         except Exception as e:
             print(e)
 
+## User
+## Add user
+# data = {
+#    'user': {
+#       'name': 'José Silva',
+#       'email': 'jose@gmail.com'  
+#     },
+#    'address':{
+#       'street':'R. Fagundes',
+#        'number' : 1123 
+#     }
+# }
+
+# add = Queries.add_user(**data)
+# print(add)
+
+
+## Get user
+# data = {'id': 1} 
+# get = Queries.get_user(**data)
+# print(get)
+
+## Update user
+# data = {
+#    'user': {
+#       'id': 1,
+#       'name': 'José Alves',
+#     },
+#    'address':{
+#       'street':'R. Fagundes',
+#        'number' : 476 
+#     }
+# }
+# upt = Queries.update_user(**data)
+# print(upt)
+
+## Delete user
+# data = {'id':1}
+# delete = Queries.delete_user(**data)
+#print(delete)
+
