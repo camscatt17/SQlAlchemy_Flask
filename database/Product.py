@@ -3,7 +3,6 @@ from sqlalchemy.orm import DeclarativeBase, relationship, sessionmaker, subquery
 from sqlalchemy import Table, event
 from __init__ import engine, session, Base
 
-
 class Product(Base): #Criando uma tabela para o produto
     __tablename__ = 'product'
 
@@ -17,12 +16,7 @@ class Product(Base): #Criando uma tabela para o produto
     def as_dict(self):
         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
-
-Base.metadata.create_all(engine)
-
 class Queries():
-    
-    #Products
     @staticmethod
     def add_product(**kwargs):
         try:
